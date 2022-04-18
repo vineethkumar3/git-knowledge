@@ -1,0 +1,30 @@
+GIT BRANCH
+Lets think you have 3 commits in main branch
+created a new branch from main so new branch also have 3 commits 
+You can add new commits to new branch
+
+git branch -b <branch_name>
+git checkout <branch_name>
+git checkout -b <branch_name>
+
+
+GIT DELETE
+If you merge your new branch to main branch then no problem
+then your new commits in new branch will also present in main branch
+If you dont merge your new branch then the commits in new branch will not be present
+
+git branch -d <branch_name> for mergerd
+git branch -D <branch_name> for not merged
+git push --delete <remote> <branch_name>  delte on remote
+
+GIT REVERT
+To undo our changes and move back to a particulat commit
+lets assume you have 3 commits
+
+git resert --hard HEAD~1
+
+this make you code move to second commit the commit will be present but wont appear
+
+To revert a particulat commit changes you can use revert command
+ git revert 20hd92s
+
